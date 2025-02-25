@@ -1,0 +1,31 @@
+<!-- public/svg/404-illustration.svg -->
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    fill="none"
+>
+    <rect width="500" height="500" rx="50" fill="#FEE2E2" />
+    <path
+        d="M250 100C320 100 360 140 360 210C360 280 320 320 250 320C180 320 140 280 140 210C140 140 180 100 250 100Z"
+        fill="#FF7043"
+    />
+    <circle cx="180" cy="200" r="20" fill="#FFF" />
+    <circle cx="320" cy="200" r="20" fill="#FFF" />
+    <path
+        d="M180 250C180 250 220 280 250 280C280 280 320 250 320 250"
+        stroke="#FFF"
+        strokeWidth="8"
+        strokeLinecap="round"
+    />
+    <text
+        x="50%"
+        y="450"
+        textAnchor="middle"
+        fill="#B91C1C"
+        fontSize="36"
+        fontWeight="bold"
+        fontFamily="Arial, sans-serif"
+    >
+        Oops! Page Not Found
+    </text>
+</svg>

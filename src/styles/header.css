@@ -1,0 +1,25 @@
+.header{
+    .restaurent{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 20%;
+            height: 1.5px;
+            background-color: rgb(234 179 8 / 1);
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 20%;
+            height: 1.5px;
+            background-color: rgb(234 179 8 / 1);
+            transform: translateY(-50%);
+        }
+    }
+}

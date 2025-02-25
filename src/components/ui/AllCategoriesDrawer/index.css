@@ -1,0 +1,15 @@
+.all-categories-drawer{
+    .ant-drawer-body{
+        padding: 12px 0px !important;
+        padding-bottom: 24px !important;
+    }
+
+    .ant-drawer-header-title{
+        flex-direction: row-reverse !important;
+        justify-content: space-between !important;
+
+        .ant-drawer-title{
+            font-size: 1.2rem;
+        }
+    }
+}

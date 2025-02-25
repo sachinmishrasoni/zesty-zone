@@ -1,0 +1,60 @@
+/* General reset styles */
+.parallaxContainer {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    perspective: 1px; /* Creates the 3D perspective */
+    overflow-x: hidden;
+    overflow-y: scroll; /* Enable scrolling for the effect */
+  }
+  
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center;
+  }
+  
+  /* Layers with different depths */
+  .layer1 {
+    background-image: url('/images/background1.jpg'); /* Add your image paths here */
+    transform: translateZ(-1px) scale(2); /* Farthest layer */
+  }
+  
+  .layer2 {
+    background-image: url('/images/background2.jpg');
+    transform: translateZ(-0.5px) scale(1.5); /* Middle layer */
+  }
+  
+  .layer3 {
+    background-image: url('/images/background3.jpg');
+    transform: translateZ(0px); /* Closest layer */
+  }
+  
+  .content {
+    position: relative;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Scoped styles for h1 and p */
+  .content h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .content p {
+    margin: 0;
+    color: #333;
+  }
+  
