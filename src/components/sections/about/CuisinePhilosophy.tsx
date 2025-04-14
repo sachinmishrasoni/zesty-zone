@@ -22,7 +22,7 @@ const CuisinePhilosophy = () => {
         <motion.div className="text-center mb-10" variants={fadeIn}>
           <h2 className="text-4xl font-bold mb-6">Our Cuisine Philosophy</h2>
           <p className="text-lg leading-relaxed">
-            At <span className="font-semibold">Zesty-Zone</span>, we believe that food is more than just nourishment—it's an experience, a story, and a journey of flavors that connect us to the world.
+            At <span className="font-semibold">Zesty-Zone</span>&#39; we believe that food is more than just nourishment—it&#39;s an experience, a story, and a journey of flavors that connect us to the world.
           </p>
         </motion.div>
 

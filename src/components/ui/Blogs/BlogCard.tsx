@@ -2,7 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 
 interface IBlogCard {
-    blog: any
+    blog: {
+        title: string,
+        description: string,
+        date: string,
+        image: string,
+        link: string
+    }
 }
 const BlogCard: React.FC<IBlogCard> = ({ blog }) => {
     return (

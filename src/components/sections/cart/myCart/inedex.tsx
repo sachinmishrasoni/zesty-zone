@@ -1,10 +1,10 @@
 import QuantityAdjuster from '@/components/common/QuantitySelector'
 import Container from '@/components/common/container'
 import Icons from '@/icons'
-import { Avatar, Button, Tooltip } from 'antd'
+import { Avatar, Button } from 'antd'
 import React from 'react'
 
-const DeleteIcon = "/svg/delete.svg";
+// const DeleteIcon = "/svg/delete.svg";
 
 const MyCart = () => {
   return (

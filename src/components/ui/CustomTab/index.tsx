@@ -89,10 +89,13 @@ const CustomTab: React.FC<IconTabProps> = ({
           <div
             key={tab.id}
             id={tab.id}
-            ref={(el: any) => (tabRefs.current[tab.id] = el)}
+            // ref={(el: any) => (tabRefs.current[tab.id] = el)}
+            ref={(el: HTMLDivElement | null) => {
+              if (el) tabRefs.current[tab.id] = el;
+            }}
             className={`relative flex items-center justify-center cursor-pointer py-2 px-4 rounded-lg transform transition-all duration-300 ${activeTab === tab.id
-                ? "text-white z-30" // Active tab styles
-                : "text-yellow-600 hover:text-yellow-600"
+              ? "text-white z-30" // Active tab styles
+              : "text-yellow-600 hover:text-yellow-600"
               }`}
             style={{
               // Ensure tabs are evenly distributed if fullWidth is true

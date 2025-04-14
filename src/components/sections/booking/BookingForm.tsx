@@ -1,19 +1,19 @@
 "use client";
 import React, { useState } from 'react';
 import { Input, Select, InputNumber, DatePicker, TimePicker, Button, Modal, Form } from 'antd';
-import dayjs, { Dayjs } from 'dayjs';
+import { Dayjs } from 'dayjs';
 
 const { Option } = Select;
 
 const BookingForm = () => {
-    const [name, setName] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-    const [phone, setPhone] = useState<string>('');
+    const [name] = useState<string>('');
+    const [email] = useState<string>('');
+    const [phone] = useState<string>('');
     const [guestCount, setGuestCount] = useState<number>(5); // Default value is 5
-    const [customGuestCount, setCustomGuestCount] = useState<number>(5); // For custom input
-    const [selectedDate, setSelectedDate] = useState<Dayjs | null>(null);
-    const [selectedTime, setSelectedTime] = useState<Dayjs | null>(null);
-    const [message, setMessage] = useState<string>('');
+    const [customGuestCount] = useState<number>(5); // For custom input
+    const [selectedDate] = useState<Dayjs | null>(null);
+    const [selectedTime] = useState<Dayjs | null>(null);
+    const [message] = useState<string>('');
     const [isCustom, setIsCustom] = useState(false); // Track if "Custom" is selected
     const [showConfirmation, setShowConfirmation] = useState(false);
 

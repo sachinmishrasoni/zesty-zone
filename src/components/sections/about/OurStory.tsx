@@ -42,11 +42,11 @@ const OurStory = () => {
             Welcome to <span className="font-semibold">Zesty-Zone</span>, where every dish tells
             a story. Our journey began with a passion for creating unforgettable dining
             experiences, inspired by flavors from around the globe. From humble beginnings,
-            we’ve grown into a beloved destination for food lovers.
+            we&#39;ve grown into a beloved destination for food lovers.
           </p>
           <p className="text-lg leading-relaxed">
             Our mission has always been simple: to bring people together through delicious
-            meals, warm hospitality, and a commitment to excellence. Whether you're here for
+            meals, warm hospitality, and a commitment to excellence. Whether you&#39;re here for
             a quick bite, a family dinner, or a celebration, we aim to make every moment
             special.
           </p>
@@ -102,13 +102,13 @@ const OurStory = () => {
           variants={fadeIn}
         >
           <p className="text-gray-600 text-lg leading-relaxed">
-            At <span className="font-semibold">Zesty-Zone</span>, we believe that every meal is an experience worth cherishing. Our philosophy revolves around the idea that food is not just about sustenance—it's a celebration of life, culture, and creativity.
+            At <span className="font-semibold">Zesty-Zone</span>, we believe that every meal is an experience worth cherishing. Our philosophy revolves around the idea that food is not just about sustenance—it&#39;s a celebration of life, culture, and creativity.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            With a team of passionate chefs and dedicated staff, we strive to make every visit memorable. From the moment you walk in, you'll be greeted with warm hospitality, a cozy ambiance, and the aroma of freshly prepared dishes made with the finest ingredients.
+            With a team of passionate chefs and dedicated staff, we strive to make every visit memorable. From the moment you walk in, you&#39;ll be greeted with warm hospitality, a cozy ambiance, and the aroma of freshly prepared dishes made with the finest ingredients.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Whether you're seeking a quiet corner for an intimate dinner, a lively space to celebrate with friends, or a place to explore exciting flavors, <span className="font-semibold">Zesty-Zone</span> is here to cater to your desires.
+            Whether you&#39;re seeking a quiet corner for an intimate dinner, a lively space to celebrate with friends, or a place to explore exciting flavors, <span className="font-semibold">Zesty-Zone</span> is here to cater to your desires.
           </p>
           <p className="text-lg leading-relaxed">
             Visit us and be a part of our story. Together, let’s make unforgettable memories over great food, delightful drinks, and shared laughter.

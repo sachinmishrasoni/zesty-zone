@@ -1,6 +1,7 @@
 import Container from '@/components/common/container'
 import Icon from '@/icons';
 import { Button } from 'antd'
+import Image from 'next/image';
 import React from 'react'
 
 const items = [
@@ -95,10 +96,17 @@ const about = () => {
       <Container maxWidth="lg" className="grid grid-cols-1 md:grid-cols-3 gap-10 py-16">
         {/* Right Section and Image */}
         <div className="md:col-span-1 order-1 md:order-2 flex justify-center items-center">
-          <img
+          {/* <img
             src="/images/interior1.jpg"
             alt="Zesty-Zone Restaurant"
             className="rounded-lg shadow-lg object-cover w-full max-w-md"
+          /> */}
+          <Image
+            src="/images/interior1.jpg"
+            alt="Zesty-Zone Restaurant"
+            className="rounded-lg shadow-lg object-cover"
+            width={500} // adjust based on your layout needs
+            height={333} // maintain aspect ratio
           />
         </div>
 
@@ -109,10 +117,10 @@ const about = () => {
             <span className="text-yellow-600">visit our restaurant</span>
           </h3>
           <p className="text-gray-600 text-lg leading-relaxed">
-            At Zesty-Zone, we’re passionate about crafting unforgettable dining experiences. From farm-to-table ingredients to the artful presentation of every dish, our mission is to delight your senses.
+          At Zesty-Zone, we&#39;re passionate about crafting unforgettable dining experiences. From farm-to-table ingredients to the artful presentation of every dish, our mission is to delight your senses.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Whether you're celebrating a special occasion, catching up with loved ones, or simply indulging in the joy of good food, Zesty-Zone is the perfect destination. Join us and let us take you on a culinary journey filled with flavors you'll never forget.
+          Whether you&#39;re celebrating a special occasion, catching up with loved ones, or simply indulging in the joy of good food, Zesty-Zone is the perfect destination. Join us and let us take you on a culinary journey filled with flavors you&#39;ll never forget.
           </p>
           <button className="bg-yellow-600 text-white px-6 py-3 rounded-md hover:bg-yellow-700 transition">
             Learn More About Us

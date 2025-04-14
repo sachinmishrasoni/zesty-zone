@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from '@/components/common/container';
 import { Avatar, Drawer } from 'antd';
 import { Grid } from 'antd';
@@ -9,7 +9,7 @@ const { useBreakpoint } = Grid;
 
 const AllCategoriesDrawer = () => {
     const screens = useBreakpoint();
-    const [isDrawerOpen, setIsDrawerOpen] = useState(true);
+    // const [isDrawerOpen, setIsDrawerOpen] = useState(true);
 
     // Determine placement based on the current screen size
     const placement = screens.md ? 'right' : 'bottom'; // `md` breakpoint and above use 'right', otherwise 'bottom'
@@ -21,7 +21,7 @@ const AllCategoriesDrawer = () => {
             title="All Categories"
             placement={placement}
             open={false}
-            onClose={() => setIsDrawerOpen(false)}
+            // onClose={() => setIsDrawerOpen(false)}
             className="all-categories-drawer !bg-gradient-to-r !from-yellow-50 !via-gray-50 !to-yellow-100"
         >
             <Container className="grid grid-cols-1 gap-4">

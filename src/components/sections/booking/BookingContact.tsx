@@ -35,7 +35,7 @@ const BookingContact = () => {
                 <div className='text-center mb-12 space-y-1'>
                     <p className='text-yellow-600 text-sm'>Have any questions?</p>
                     <h3 className="text-4xl font-bold text-gray-800">Contact Us</h3>
-                    <p className='text-gray-600'>We're here to help!</p>
+                    <p className='text-gray-600'>We&#39;re here to help!</p>
                 </div>
 
                 {/* Contact Information Cards */}

@@ -31,7 +31,7 @@ const events = [
 ];
 
 const UpcomingEvents = () => {
-    const [nextEvent, setNextEvent] = useState(events[0]);
+    const [nextEvent] = useState(events[0]);
     const [timeLeft, setTimeLeft] = useState("");
 
     useEffect(() => {

@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const blogData = [
   {
@@ -60,7 +61,14 @@ const BlogPostList = () => {
           <div className="mb-10">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Featured Post</h2>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={filteredPosts[0].image} alt={filteredPosts[0].title} className="w-full h-80 object-cover" />
+              {/* <img src={filteredPosts[0].image} alt={filteredPosts[0].title} className="w-full h-80 object-cover" /> */}
+              <Image
+                src={filteredPosts[0].image}
+                alt={filteredPosts[0].title}
+                width={800}       // adjust based on your layout
+                height={320}      // should match or maintain aspect ratio with h-80 (~20rem)
+                className="w-full h-80 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   <Link href={`/blog/${filteredPosts[0].slug}`} className="hover:text-yellow-600">
@@ -80,7 +88,16 @@ const BlogPostList = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedPosts.map((post) => (
             <div key={post.slug} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={post.image} alt={post.title} className="w-full h-56 object-cover" />
+              {/* <img src={post.image} alt={post.title} className="w-full h-56 object-cover" /> */}
+              <div className="relative w-full h-56">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  sizes="100vw"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   <Link href={`/blog/${post.slug}`} className="hover:text-yellow-600">

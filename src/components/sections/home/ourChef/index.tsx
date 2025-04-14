@@ -35,8 +35,8 @@ const OurChef = () => {
                         {/* Chef Quote */}
                         <blockquote className="bg-gray-100 p-4 italic border-l-4 border-yellow-600">
                             <p>
-                                "Cooking is not just about feeding the body; it's about creating an
-                                unforgettable experience that nourishes the soul."
+                                &#34;Cooking is not just about feeding the body; it&#39;s about creating an
+                                unforgettable experience that nourishes the soul.&#34;
                             </p>
                             <footer className="text-right font-bold mt-2">- Chef Antonio Rossi</footer>
                         </blockquote>

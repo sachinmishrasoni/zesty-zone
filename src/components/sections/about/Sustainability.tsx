@@ -44,7 +44,7 @@ const Sustainability = () => {
               Our restaurant is designed to minimize waste. From composting food scraps to using eco-friendly packaging, we ensure that every step we take contributes positively to the environment.
             </p>
             <p className="text-lg leading-relaxed">
-              Sustainability is not just a practice; it's our promise to you and the planet. Together, we can create a brighter, greener future—one meal at a time.
+              Sustainability is not just a practice; it&#39;s our promise to you and the planet. Together, we can create a brighter, greener future—one meal at a time.
             </p>
           </motion.div>
 

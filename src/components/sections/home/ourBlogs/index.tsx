@@ -39,7 +39,7 @@ const OurBlogs = () => {
                     Our <span className="text-yellow-600">Blogs</span>
                 </h2>
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-                    Explore our latest articles on recipes, behind-the-scenes stories, and dining tips. Stay inspired with Zesty-Zone's culinary journey!
+                    Explore our latest articles on recipes, behind-the-scenes stories, and dining tips. Stay inspired with Zesty-Zone&#39;s culinary journey!
                 </p>
 
                 {/* Blog Grid */}

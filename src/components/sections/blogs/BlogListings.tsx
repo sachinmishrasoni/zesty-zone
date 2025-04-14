@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+// import Image from 'next/image'
+// import Link from 'next/link'
 import BlogCard from '@/components/ui/BlogCard'
 
 const BlogListings = () => {
@@ -42,8 +42,8 @@ const BlogListings = () => {
 
         {/* Blog Listings */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          {blogs.map((blog, index) => (
-            <BlogCard />
+          {blogs.map((_blog, index) => (
+            <BlogCard key={index} />
           ))}
         </div>
     </section>

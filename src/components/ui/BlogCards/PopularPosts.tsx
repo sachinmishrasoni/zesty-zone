@@ -1,19 +1,39 @@
 // components/common/PopularPosts.js
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-const PopularPosts = ({ popularPosts }: any) => {
+interface IPost {
+  slug: string;
+  image: string;
+  title: string;
+  date: string;
+  views: number;
+}
+interface IPopularPosts {
+  popularPosts: IPost[]
+}
+const PopularPosts = ({ popularPosts }: IPopularPosts) => {
   return (
     <section className="my-12">
       <h3 className="text-2xl font-semibold text-gray-800 mb-4">Popular Posts</h3>
       <div className="space-y-4">
-        {popularPosts.map((post: any) => (
+        {popularPosts.map((post: { slug: string; image: string; title: string; date: string; views: number }) => (
           <div key={post.slug} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img
+            {/* <img
               src={post.image}
               alt={post.title}
               className="w-full h-56 object-cover"
-            />
+            /> */}
+            <div className="relative w-full h-56">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
             <div className="p-4">
               <h4 className="text-lg font-semibold text-gray-800">
                 <Link href={`/blog/${post.slug}`}>{post.title}</Link>

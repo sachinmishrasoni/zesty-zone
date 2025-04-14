@@ -91,7 +91,7 @@ const AboutUs: React.FC = () => {
                             At Zesty-Zone, we believe that every meal tells a story. From sourcing the freshest ingredients to creating a warm and welcoming ambiance, we’re passionate about making your dining experience unforgettable.
                         </p>
                         <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                            Whether you're celebrating a special occasion, catching up with loved ones, or simply indulging in the joy of good food, Zesty-Zone is the perfect destination. Join us and let us take you on a culinary journey filled with flavors you'll never forget.
+                            Whether you&#39;re celebrating a special occasion, catching up with loved ones, or simply indulging in the joy of good food, Zesty-Zone is the perfect destination. Join us and let us take you on a culinary journey filled with flavors you&#39;ll never forget.
                         </p>
 
                         {/* Highlights with Icons */}

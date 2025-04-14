@@ -11,7 +11,7 @@ const ContactSection = () => {
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState("");
 
-  const onFinish = async (values: any) => {
+  const onFinish = async () => {
     setLoading(true);
     try {
       // Simulate API call

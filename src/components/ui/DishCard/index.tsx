@@ -7,7 +7,7 @@ import React, { useState } from "react";
 const DishCard: React.FC = () => {
     const [isFavorite, setIsFavorite] = useState(false); // Toggle favorite
     const [quantity, setQuantity] = useState(0); // Quantity in cart
-    const [selectedSize, setSelectedSize] = useState("small"); // Dish size
+    // const [selectedSize, setSelectedSize] = useState("small"); // Dish size
     const [loadingImage, setLoadingImage] = useState(true); // Loading state for image
 
     // Toggle favorite handler
@@ -95,9 +95,16 @@ const DishCard: React.FC = () => {
                                 <h3 className="text-yellow-600 font-bold">Price: ₹299</h3>
                             </div>
                             <Tooltip title="Vegetarian">
-                                <img
+                                {/* <img
                                     src="/svg/vegetarian-icon.svg"
                                     alt="Vegetarian dish"
+                                    className="w-10 h-10"
+                                /> */}
+                                <Image
+                                    src="/svg/vegetarian-icon.svg"
+                                    alt="Vegetarian dish"
+                                    width={40}
+                                    height={40}
                                     className="w-10 h-10"
                                 />
                             </Tooltip>
@@ -111,20 +118,20 @@ const DishCard: React.FC = () => {
                     {/* Add to Cart Button */}
                     <div className="flex justify-between mt-2 items-center">
                         <Select
-                        defaultValue="small"
-                        className="!rounded-full !hidden md:!block"
-                        style={{ borderRadius: "50px" }}
-                        size="small"
-                        onChange={setSelectedSize}
-                        aria-label="Select dish size"
-                        options={[
-                            { value: "small", label: "Small" },
-                            { value: "medium", label: "Medium" },
-                            { value: "large", label: "Large" },
-                            { value: "extra-large", label: "Extra Large" },
-                            { value: "custom", label: "Custom" },
-                        ]}
-                    />
+                            defaultValue="small"
+                            className="!rounded-full !hidden md:!block"
+                            style={{ borderRadius: "50px" }}
+                            size="small"
+                            // onChange={setSelectedSize}
+                            aria-label="Select dish size"
+                            options={[
+                                { value: "small", label: "Small" },
+                                { value: "medium", label: "Medium" },
+                                { value: "large", label: "Large" },
+                                { value: "extra-large", label: "Extra Large" },
+                                { value: "custom", label: "Custom" },
+                            ]}
+                        />
                         {quantity > 0 ? (
                             <div className="flex items-center gap-2">
                                 <Tooltip title="Decrease quantity">

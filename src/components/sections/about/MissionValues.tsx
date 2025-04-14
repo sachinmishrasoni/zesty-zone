@@ -60,7 +60,7 @@ const MissionValues = () => {
               <h4 className="text-xl font-semibold mb-2">Excellence</h4>
               <p className="text-gray-600">
                 We strive to deliver exceptional food, service, and experiences that exceed our
-                customers' expectations.
+                customers&#39; expectations.
               </p>
             </motion.div>
 

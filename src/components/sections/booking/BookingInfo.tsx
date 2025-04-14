@@ -28,7 +28,7 @@ const BookingInfo = () => {
             <li><strong>Reservation Timing:</strong> Please ensure to arrive 10 minutes before your booking time.</li>
             <li><strong>Cancellation Policy:</strong> Reservations must be canceled at least 24 hours in advance.</li>
             <li><strong>Group Size:</strong> Reservations are only accepted for a minimum of 2 people.</li>
-            <li><strong>Late Arrival:</strong> If you're running late, please call us to hold your table.</li>
+            <li><strong>Late Arrival:</strong> If you&#39;re running late, please call us to hold your table.</li>
           </ul>
         </div>
       </div>

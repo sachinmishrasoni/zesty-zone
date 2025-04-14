@@ -1,7 +1,7 @@
-import Slider from '@/components/common/Slider'
+// import Slider from '@/components/common/Slider'
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+// import Image from 'next/image'
+// import Link from 'next/link'
 import BlogCard from '@/components/ui/BlogCard'
 
 
